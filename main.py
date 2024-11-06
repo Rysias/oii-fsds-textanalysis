@@ -1,8 +1,8 @@
 # main.py
-from models.reddit_scraper import RedditScraper
-from utils.text_processor import preprocess_text
-from utils.analysis import analyze_vocabulary, tfidf_analyze_subreddit
-from config.settings import USER_AGENT
+from src.oii_fsds_textanalysis.reddit_scraper import RedditScraper
+from oii_fsds_textanalysis.text_processor import preprocess_text
+from oii_fsds_textanalysis.analysis import tfidf_analyze_subreddit, create_posts_dataframe
+from src.oii_fsds_textanalysis.settings import USER_AGENT
 
 def main():
     

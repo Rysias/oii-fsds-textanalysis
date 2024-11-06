@@ -1,0 +1,33 @@
+[project]
+name = "oii-fsds-textanalysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rysias", email = "jhvithamar@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "jinja2>=3.1.4",
+    "matplotlib>=3.9.2",
+    "networkx>=3.4.2",
+    "nltk>=3.9.1",
+    "numpy>=2.1.3",
+    "pandas>=2.2.3",
+    "praw>=7.8.1",
+    "pyarrow>=18.0.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "scikit-learn>=1.5.2",
+    "seaborn>=0.13.2",
+    "textblob>=0.18.0.post0",
+    "vadersentiment>=3.3.2",
+]
+
+[project.scripts]
+oii-fsds-textanalysis = "oii_fsds_textanalysis:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
